@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_Image"
+    >
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="3dp"
+       android:textAlignment="center"
+       android:background="@drawable/oval"
+       android:id="@+id/circleImageView" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#fff"
+            android:text="A"
+            android:textAlignment="center"
+            android:textSize="31sp"
+            android:id="@+id/contact_firstname_tv" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRelativeLayout"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_alignLeft="@+id/line"
+        android:layout_alignStart="@+id/line">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="555555555555555"
+        android:layout_marginLeft="27dp"
+        android:textSize="20dp"
+
+android:textColor="#000"
+        android:layout_marginStart="27dp"
+        android:id="@+id/contact_name_tv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="snkkddddddddddddddddddddddddddd"
+        android:id="@+id/contact_phone_no_tv"
+        android:textColor="#000"
+        android:layout_below="@+id/contact_name_tv"
+        android:layout_alignLeft="@+id/contact_name_tv"
+        android:layout_alignStart="@+id/contact_name_tv" />
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_below="@id/textRelativeLayout"
+
+        android:layout_marginTop="15dp"
+        android:background="#979797"
+        />
+    </RelativeLayout>
